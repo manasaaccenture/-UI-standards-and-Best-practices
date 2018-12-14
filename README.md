@@ -24,15 +24,15 @@ Good Code:
 
 Using an external stylesheet is very useful. Put all of your CSS in an external file, and have it included in your HTML. This is probably the best way to be sure to keep content and presentation separate.
 
-Advantages of using an external stylesheet:
+### Advantages of using an external stylesheet:
 
-It helps to separate content from presentation.
+    It helps to separate content from presentation.
 
-External stylesheets can be cached, allowing faster page loading times.
+    External stylesheets can be cached, allowing faster page loading times.
 
-A single stylesheet can be applied to every page of a site, allowing quick style changes to a single file.
+    A single stylesheet can be applied to every page of a site, allowing quick style changes to a single file.
 
-It makes organization much easier.
+    It makes organization much easier.
 
 To use an external stylesheet, simply place the following code in between your head tags. Be sure to replace style.css with your CSS file.
 
