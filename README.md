@@ -196,7 +196,7 @@ Validating your CSS and XHTML does more than give a sense of pride: it helps you
 
 
 ## 19. Add Margins and Padding to All
-Different browsers render elements differently. IE renders certain elements differently than Firefox. IE 6 renders elements differently than IE 7 and IE 8. While the browsers are starting to adhere more closely to W3C standards, they're still not perfect (*cough IE cough*).
+Different browsers render elements differently. IE renders certain elements differently than Firefox. IE 6 renders elements differently than IE 7 and IE 8. While the browsers are starting to adhere more closely to W3C standards, they're still not perfect.
 
 One of the main differences between versions of browsers is how padding and margins are rendered. If you're not already using a reset, you might want to define the margin and padding for all elements on the page, to be on the safe side. You can do this quickly with a global reset, like so:
 
