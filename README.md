@@ -194,6 +194,7 @@ There's always been a strong debate as to whether it's better to use pixels (px)
 ## 18. Validate Your CSS and XHTML
 Validating your CSS and XHTML does more than give a sense of pride: it helps you quickly spot errors in your code. If you're working on a design and for some reason things just aren't looking right, try running the markup and CSS validator and see what errors pop up. 
 
+
 ## 19. Add Margins and Padding to All
 Different browsers render elements differently. IE renders certain elements differently than Firefox. IE 6 renders elements differently than IE 7 and IE 8. While the browsers are starting to adhere more closely to W3C standards, they're still not perfect (*cough IE cough*).
 
@@ -202,7 +203,44 @@ One of the main differences between versions of browsers is how padding and marg
 ```
 * {margin:0;padding:0;}
 ```
+## 20. Use a Reset
+Most CSS frameworks have a reset built-in, but if you’re not going to use one then at least consider using a reset. Resets essentially eliminate browser inconsistencies such as heights, font sizes, margins, headings, etc. The reset allows your layout look consistent in all browsers.
 
+## 21. Use multiple stylesheets
+Depending on the complexity of the design and the size of the site, it’s sometimes easier to make smaller, multiple stylesheets instead of one giant stylesheet. Aside from it being easier for the designer to manage, multiple stylesheets allow you to leave out CSS on certain pages that don’t need them.
+
+For example, I might have a polling program that would have a unique set of styles. Instead of including the poll styles to the main stylesheet, I could just create a poll.css and the stylesheet only to the pages that show the poll.
+
+However, be sure to consider the number of HTTP requests that are being made. Many designers prefer to develop with multiple stylesheets, and then combine them into one file. This reduces the number of HTTP requests to one. Also, the entire file will be cached on the user’s computer.
+
+## 22. Keep a Color Reference
+Include a reference at the top of your CSS file. 
+```
+/* reference css
+background: #FFCCCC
+normal text: #FFF46D
+font-size: 12em
+*/
+
+master.css
+@import url("reference.css");
+h1 {
+background: background
+font-size: font-size
+```
+## 23. Use a master stylesheet
+Let me quote this piece of advice from its original source:
+
+“One of the most common mistakes I see beginners and intermediates fall victim to when it comes to CSS is not removing the default browser styling. This leads to inconsistencies in the appearance of your design across browsers, and ultimately leaves a lot of designers blaming the browser. It is a misplaced blame, of course. Before you do anything else when coding a website, you should reset the styling.” [Master Stylesheet: The Most Useful CSS Technique], [Ryan Parr]
+
+```
+master.css
+@import url("reset.css");
+@import url("global.css");
+@import url("flash.css");
+@import url("structure.css");
+<style type="text/css" media="Screen"> /**/@import url("css/master.css");/**/ </style>
+```
 Conclusion:
 
 We have listed out best practices which every front-end and back-end developer follows. Also if the beginner level developer follows these guidelines.
