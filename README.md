@@ -126,6 +126,6 @@ Also following are the prefix description:
 ```
 Conclusion:
 
-We have listed out best practices which every front-end and back-end developer follows. Also if the beginner level developer follows these guidelines, they will not miss a single point while they are writing the CSS.
+We have listed out best practices which every front-end and back-end developer follows. Also if the beginner level developer follows these guidelines.
 
 This approach is quite practical for both front-end and back-end developers.
