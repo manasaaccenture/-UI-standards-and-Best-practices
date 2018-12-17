@@ -250,6 +250,41 @@ One of the main advantages of CSS is the ability to separate designs from conten
 
 The naming of your CSS elements is based on what they’re, not what they give the impression of being like. For instance, “.comment-blue” is not appropriate than “.comment-beta” (because if you need to change the color of this class, then you only need to change in CSS, not in HTML), and “.post-large-font” is additional limiting than “.post-title”.
 
+ Document CSS With a Style Guide in Mind
+A big part of documenting CSS properly has to do with writing good CSS and vice versa. This means that even when the state of your CSS code base might not be the best, enforcing documentation rules can move you towards a better system.
+
+This is where documenting CSS with a style guide in mind comes into place. The idea behind it is that a style guide can help you determine a good structure for your CSS because to create one you will need to distinguish between:
+
+the baseline styles that define the look and feel of your application (including any CSS frameworks that you are using)
+the customizations that are done to specific components, and
+the customizations that are done to specific pages.
+
+The bulk of your CSS should be comprised of the baseline styles, as they are available anywhere in the application and affect all elements in their default state. Custom styles should take place as you add components with a specific look and behavior, or in the cases where the layout of an element or component in a page requires it.
+
+A great way to capture how this specific setup can work in your application is to create a  style guide sitemap. Once you know how a style guide looks like in your application, you can document elements with that in mind. For example, if you have defined in your style guide how buttons and navigations look, it’s clear cut where you should add new styles and documentation for them (in “buttons.css” and “navs.css”).  But what about a navigation that’s made of buttons?
+
+Having a style guide can help you make this decision, as you can compare how buttons and navigations look, from a display and a markup perspective. Let’s look at this example:
+
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-emphasis">Emphasis</button>
+ 
+<button type="button" class="btn btn-primary disabled">Primary</button>
+<button type="button" class="btn btn-secondary disabled">Secondary</button>
+<button type="button" class="btn btn-emphasis disabled">Emphasis</button>
+
+
+<ul class="nav nav-tabs">
+     <li class="active"><a href="#">Active</a></li>
+     <li><a href="#">Nav Item</a></li>
+     <li><a href="#">Nav Item</a></li>
+     <li class="disabled"><a href="#">Nav Item</a></li>
+</ul>
+In this case, there are two possible locations for the CSS that will define the navigation made of buttons:
+
+If the markup follows the structure of other navigations, using a list of links, or a <nav> with links that look like buttons, then add the nav styles to “navs.css”.
+If the markup that you will use is <button> then, add the styles to “buttons.css”. You could even add it as a separate stylesheet (like “buttons-group.css”). In this case, the term “navigation” wouldn’t be appropriate any longer since HTML buttons are less accessible as navigational items.
+
 Conclusion:
 
 We have listed out best practices which every front-end and back-end developer follows. Also if the beginner level developer follows these guidelines.
