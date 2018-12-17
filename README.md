@@ -133,6 +133,10 @@ Generic classes (body, a, p, h1, etc.)
 #main-content
 **<editors-note>** Don't forget to comment each section! **</editors-note>**
 ```
+/****** Generic content *********/
+
+Resets and overrides.....
+
 /****** main content *********/
  
 styles goes here...
