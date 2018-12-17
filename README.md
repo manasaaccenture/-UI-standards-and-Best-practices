@@ -147,6 +147,58 @@ Just like any other language, it's a great idea to comment your code in sections
 ```
 /* Here's how you comment CSS */
 ```
+
+## 13. Combine Elements
+Elements in a stylesheet sometimes share properties. Instead of re-writing previous code, why not just combine them? For example, your h1, h2, and h3 elements might all share the same font and color:
+```
+h1, h2, h3 {font-family: tahoma, color: #333}
+```
+We could add unique characteristics to each of these header styles if we wanted (ie. h1 {size: 2.1em}) later in the stylesheet.
+
+## 14. Use Multiple Classes
+Sometimes it's beneficial to add multiple classes to an element. Let's say that you have a <div> "box" that you want to float right, and you've already got a class .right in your CSS that floats everything to the right. You can simply add an extra class in the declaration, like so:
+    
+```
+<div class="box right"></div>
+```
+You can add as many classes as you'd like (space separated) to any declaration.
+    
+## 15. Make Use of Generic Classes
+You'll find that there are certain styles that you're applying over and over. Instead of adding that particular style to each ID, you can create generic classes and add them to the IDs or other CSS classes (using #14).
+
+For example, I find myself using float:right and float:left over an over in my designs. So I simply add the classes .left and .right to my stylesheet, and reference it in the elements.
+
+```
+.left {float:left}
+.right {float:right}
+ 
+<div id="coolbox" class="left">...</div>
+```
+This way you don't have to constantly add "float:left" to all the elements that need to be floated.
+
+<editors-note> Please refer to editor's notes for #14. </editors-note>
+
+## 16. Use Text-transform
+Text-transform is a highly-useful CSS property that allows you to "standardize" how text is formatted on your site. For example, say you're wanting to create some headers that only have lowercase letters. Just add the text-transform property to the header style like so:
+
+```
+text-transform: lowercase;
+```
+## 17. Ems vs. Pixels
+There's always been a strong debate as to whether it's better to use pixels (px) or ems (em) when defining font sizes. Pixels are a more static way to define font sizes, and ems are more scalable with different browser sizes and mobile devices. With the advent of many different types of web browsing (laptop, mobile, etc.), ems are increasingly becoming the default for font size measurements as they allow the greatest form of flexibility.
+
+## 18. Validate Your CSS and XHTML
+Validating your CSS and XHTML does more than give a sense of pride: it helps you quickly spot errors in your code. If you're working on a design and for some reason things just aren't looking right, try running the markup and CSS validator and see what errors pop up. 
+
+## 19. Add Margins and Padding to All
+Different browsers render elements differently. IE renders certain elements differently than Firefox. IE 6 renders elements differently than IE 7 and IE 8. While the browsers are starting to adhere more closely to W3C standards, they're still not perfect (*cough IE cough*).
+
+One of the main differences between versions of browsers is how padding and margins are rendered. If you're not already using a reset, you might want to define the margin and padding for all elements on the page, to be on the safe side. You can do this quickly with a global reset, like so:
+
+```
+* {margin:0;padding:0;}
+```
+
 Conclusion:
 
 We have listed out best practices which every front-end and back-end developer follows. Also if the beginner level developer follows these guidelines.
