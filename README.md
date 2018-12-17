@@ -243,6 +243,13 @@ master.css
 @import url("structure.css");
 <style type="text/css" media="Screen"> /**/@import url("css/master.css");/**/ </style>
 ```
+
+## 24. Use Appropriate Naming Convention
+
+One of the main advantages of CSS is the ability to separate designs from content. You’ll be able to change the entire design of your website by simply modifying the CSS without ever touching the markup language. Therefore don’t create your CSS by using limiting names. Use additional versatile naming conventions and keep consistent.
+
+The naming of your CSS elements is based on what they’re, not what they give the impression of being like. For instance, “.comment-blue” is not appropriate than “.comment-beta” (because if you need to change the color of this class, then you only need to change in CSS, not in HTML), and “.post-large-font” is additional limiting than “.post-title”.
+
 Conclusion:
 
 We have listed out best practices which every front-end and back-end developer follows. Also if the beginner level developer follows these guidelines.
