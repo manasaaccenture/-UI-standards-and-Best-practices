@@ -250,10 +250,11 @@ One of the main advantages of CSS is the ability to separate designs from conten
 
 The naming of your CSS elements is based on what they’re, not what they give the impression of being like. For instance, “.comment-blue” is not appropriate than “.comment-beta” (because if you need to change the color of this class, then you only need to change in CSS, not in HTML), and “.post-large-font” is additional limiting than “.post-title”.
 
- Document CSS With a Style Guide in Mind
+## 25. Document CSS With a Style Guide in Mind
 A big part of documenting CSS properly has to do with writing good CSS and vice versa. This means that even when the state of your CSS code base might not be the best, enforcing documentation rules can move you towards a better system.
 
 This is where documenting CSS with a style guide in mind comes into place. The idea behind it is that a style guide can help you determine a good structure for your CSS because to create one you will need to distinguish between:
+
 
 the baseline styles that define the look and feel of your application (including any CSS frameworks that you are using)
 the customizations that are done to specific components, and
