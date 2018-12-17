@@ -206,6 +206,8 @@ One of the main differences between versions of browsers is how padding and marg
 ## 20. Use a Reset
 Most CSS frameworks have a reset built-in, but if you’re not going to use one then at least consider using a reset. Resets essentially eliminate browser inconsistencies such as heights, font sizes, margins, headings, etc. The reset allows your layout look consistent in all browsers.
 
+Find different type of Reset CSS from here: http://cssreset.com/
+
 ## 21. Use multiple stylesheets
 Depending on the complexity of the design and the size of the site, it’s sometimes easier to make smaller, multiple stylesheets instead of one giant stylesheet. Aside from it being easier for the designer to manage, multiple stylesheets allow you to leave out CSS on certain pages that don’t need them.
 
