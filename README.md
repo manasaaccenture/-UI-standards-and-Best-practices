@@ -65,7 +65,9 @@ Example ID:  #user_image
 “Divide your stylesheet into specific sections: i.e. Global Styles – (body, paragraphs, lists, etc), Header, Page Structure, Headings, Text Styles, Navigation, Forms, Comments, and Extras.
 
 /* -----------------------------------*/
+
 /* ---------->>> GLOBAL <<<-----------*/
+
 /* -----------------------------------*/
 
 Separate code into blocks. “This might be common sense to some of you but sometimes I look at CSS and it’s not broken down into “sections.” It’s easy to do and it makes working with code weeks, months, or years later much easier. You’ll have an easier time finding classes and elements that you need to change.
