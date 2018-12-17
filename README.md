@@ -124,6 +124,29 @@ Also following are the prefix description:
 -o- /*this is use for opera browser*/
 -ms- /*this is use for Internet Explorer (but not always it's depends on CSS3 browser support)*/
 ```
+## 11. Organize the Stylesheet with a Top-down Structure
+It always makes sense to lay your stylesheet out in a way that allows you to quickly find parts of your code. I recommend a top-down format that tackles styles as they appear in the source code. So, an example stylesheet might be ordered like this:
+
+Generic classes (body, a, p, h1, etc.)
+#header
+#nav-menu
+#main-content
+**<editors-note>** Don't forget to comment each section! **</editors-note>**
+```
+/****** main content *********/
+ 
+styles goes here...
+ 
+/****** footer *********/
+ 
+styles go here...
+```
+
+## 12. Comment your CSS
+Just like any other language, it's a great idea to comment your code in sections. To add a comment, simply add /* behind the comment, and */ to close it, like so:
+```
+/* Here's how you comment CSS */
+```
 Conclusion:
 
 We have listed out best practices which every front-end and back-end developer follows. Also if the beginner level developer follows these guidelines.
