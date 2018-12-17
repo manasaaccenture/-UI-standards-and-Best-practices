@@ -215,7 +215,7 @@ For example, I might have a polling program that would have a unique set of styl
 
 However, be sure to consider the number of HTTP requests that are being made. Many designers prefer to develop with multiple stylesheets, and then combine them into one file. This reduces the number of HTTP requests to one. Also, the entire file will be cached on the user’s computer.
 
-## 22. Keep a Color Reference
+## 22. Keep a Reference
 Include a reference at the top of your CSS file. 
 ```
 /* reference css
@@ -229,6 +229,7 @@ master.css
 h1 {
 background: background
 font-size: font-size
+}
 ```
 ## 23. Use a master stylesheet
 Let me quote this piece of advice from its original source:
@@ -250,6 +251,22 @@ One of the main advantages of CSS is the ability to separate designs from conten
 
 The naming of your CSS elements is based on what they’re, not what they give the impression of being like. For instance, “.comment-blue” is not appropriate than “.comment-beta” (because if you need to change the color of this class, then you only need to change in CSS, not in HTML), and “.post-large-font” is additional limiting than “.post-title”.
 
+## 25. Make Use of Semantic Elements
+The library of elements in HTML is fairly large, with well over 100 elements available for use. Deciding which elements to use to describe different content may be difficult, but these elements are the backbone of semantics. We need to research and double-check our code to ensure we are using the proper semantic elements. 
+
+Here the HTML doesn’t use the proper heading and paragraph elements; instead, it uses meaningless elements to style and group content.
+```
+Bad Code
+<span class="heading"><strong>Welcome Back</span></strong>
+<br><br>
+It has been a while. What have you been up to lately?
+<br><br>
+            
+Good Code
+<h1>Welcome Back</h1>
+<p>It has been a while. What have you been up to lately?</p>
+```
+              
 
 Conclusion:
 
