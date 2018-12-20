@@ -188,8 +188,56 @@ Text-transform is a highly-useful CSS property that allows you to "standardize" 
 ```
 text-transform: lowercase;
 ```
-## 17. Ems vs. Pixels
+## 17. Font Size
+
+The font-size property sets the size of the text.
+
 There's always been a strong debate as to whether it's better to use pixels (px) or ems (em) when defining font sizes. Pixels are a more static way to define font sizes, and ems are more scalable with different browser sizes and mobile devices. With the advent of many different types of web browsing (laptop, mobile, etc.), ems are increasingly becoming the default for font size measurements as they allow the greatest form of flexibility.
+
+The em size unit is recommended by the W3C.
+
+1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.
+
+The size can be calculated from pixels to em using this formula: pixels/16=em
+
+```
+h1 {
+  font-size: 2.5em; /* 40px/16=2.5em */
+}
+
+h2 {
+  font-size: 1.875em; /* 30px/16=1.875em */
+}
+
+p {
+  font-size: 0.875em; /* 14px/16=0.875em */
+}
+```
+With the em size, it is possible to adjust the text size in all browsers.
+
+Unfortunately, there is still a problem with older versions of IE. The text becomes larger than it should when made larger, and smaller than it should when made smaller.
+
+### Use a Combination of Percent and Em
+The solution that works in all browsers, is to set a default font-size in percent for the <body> element:
+    
+ ```   
+ body {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.875em;
+}
+
+p {
+  font-size: 0.875em;
+}
+```
+It shows the same text size in all browsers, and allows all browsers to zoom or resize the text!
 
 ## 18. Validate Your CSS and XHTML
 Validating your CSS and XHTML does more than give a sense of pride: it helps you quickly spot errors in your code. If you're working on a design and for some reason things just aren't looking right, try running the markup and CSS validator and see what errors pop up. 
